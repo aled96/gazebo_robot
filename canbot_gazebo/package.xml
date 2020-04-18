@@ -25,7 +25,6 @@
   <run_depend>xacro</run_depend>
   <run_depend>canbot_control</run_depend>
   <run_depend>canbot_description</run_depend>
-  <run_depend>sensor_msgs</run_depend>
 
   <export>
   </export>
