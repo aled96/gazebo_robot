@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>canbot_control</name>
+  <version>0.0.0</version>
+  <description>The canbot_control package</description>
+
+  <maintainer email="alessio.deluca.iic96d@gmail.com">Alessio De Luca</maintainer>
+
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/VEDREMO</url>
+
+  <author email="alessio.deluca.iic96d@gmail.com">Alessio De Luca</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>controller_manager</run_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+
+  <run_depend>rqt_gui</run_depend>
+  <run_depend>effort_controllers</run_depend>
+
+
+  <export>
+  </export>
+
+</package>

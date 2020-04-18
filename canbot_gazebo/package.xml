@@ -1,0 +1,32 @@
+<package>
+  <name>canbot_gazebo</name>
+  <version>0.1.0</version>
+  <description>canbot_gazebo</description>
+  <maintainer email="alessio.deluca.iic96d@gmail.com">Alessio De Luca</maintainer>
+
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/VEDREMO</url>
+
+  <author email="alessio.deluca.iic96d@gmail.com">Alessio De Luca</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>controller_manager</run_depend>
+  <run_depend>diff_drive_controller</run_depend>
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
+  <run_depend>joint_state_controller</run_depend>
+  <run_depend>position_controllers</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rqt_robot_steering</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>urdf_tutorial</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>canbot_control</run_depend>
+  <run_depend>canbot_description</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

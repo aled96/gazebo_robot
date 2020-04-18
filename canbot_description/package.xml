@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>canbot_description</name>
+  <version>1.0.0</version>
+  <description>The canbot_description package</description>
+
+  <maintainer email="alessio.deluca.iic96d@gmail.com">Alessio De Luca</maintainer>
+
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/VEDREMO</url>
+
+  <author email="alessio.deluca.iic96d@gmail.com">Alessio De Luca</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>rviz</run_depend>
+
+  <export>
+  </export>
+</package>

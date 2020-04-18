@@ -1,31 +1,28 @@
 # Gazebo ROS Demos
 
-* Author: Dave Coleman <davetcoleman@gmail.com>
+* Author: Alessio De Luca <alessio.deluca.iic96d@gmail.com>
 * License: GNU General Public License, version 3 (GPL-3.0)
 
 Example robots and code for interfacing Gazebo with ROS
 
-## Tutorials
-
-[ROS URDF](http://gazebosim.org/tutorials/?tut=ros_urdf)
 
 ## Quick Start
 
 Rviz:
 
-    roslaunch rrbot_description rrbot_rviz.launch
+     rviz rviz ~/test_canbot_ws/src/canbot_gazebo/worlds/rviz_config.rviz
 
 Gazebo:
 
-    roslaunch rrbot_gazebo rrbot_world.launch
+    roslaunch canbot_gazebo canbot.launch
 
 ROS Control:
 
-    roslaunch rrbot_control rrbot_control.launch
+    Launched by gazebo launcher
 
 Example of Moving Joints:
 
-    rostopic pub /rrbot/joint2_position_controller/command std_msgs/Float64 "data: -0.9"
+    rostopic pub -1 /canbot/leftWheel_effort_controller/command std_msgs/Float64 "data: 1.5"
 
 ## Develop and Contribute
 
