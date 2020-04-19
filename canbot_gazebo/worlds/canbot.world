@@ -17,6 +17,11 @@
       <uri>model://home/alessio/test_canbot_ws/src/canbot_gazebo/worlds/Maze1/Maze1.sdf</uri>
         <pose> 0 -1 0 0 0 0</pose>
     </include>-->
+    
+    <include>
+      <uri>model://cafe</uri>
+        <pose> 0 0 0 0 0 0</pose>
+    </include>-->
 
     <!-- Focus camera on tall pendulum -->
     <gui fullscreen='0'>
