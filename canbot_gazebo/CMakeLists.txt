@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 project(canbot_gazebo)
 
 find_package(catkin REQUIRED
-sensor_msgs)
+sensor_msgs
+)
 
 catkin_package()
 
