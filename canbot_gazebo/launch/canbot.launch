@@ -12,7 +12,10 @@
     <node name="canbot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
             args="-urdf -param robot_description -model canbot" />
             
+            
     <!-- ros_control mybot launch file -->
     <include file="$(find canbot_control)/launch/canbot_control.launch" />
+   
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find canbot_gazebo)/worlds/rviz_config.rviz" />
        
 </launch>

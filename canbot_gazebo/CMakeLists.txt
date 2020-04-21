@@ -3,7 +3,10 @@ project(canbot_gazebo)
 
 find_package(catkin REQUIRED
 sensor_msgs
+gazebo_ros
 )
+
+find_package( gazebo REQUIRED)
 
 catkin_package()
 

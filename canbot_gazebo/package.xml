@@ -25,7 +25,10 @@
   <run_depend>xacro</run_depend>
   <run_depend>canbot_control</run_depend>
   <run_depend>canbot_description</run_depend>
+  <run_depend>gazebo_ros</run_depend>
 
   <export>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros plugin_path="${prefix}/lib" gazebo_media_path="${prefix}"/>
   </export>
 </package>

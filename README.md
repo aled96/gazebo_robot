@@ -5,6 +5,12 @@
 
 Example robots and code for interfacing Gazebo with ROS
 
+## Installation
+Install ROS:
+    sudo apt-get install ros-kinetic-desktop-full (CHECK)
+Install others:
+    sudo apt-get install ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-nav-core
+
 
 ## Quick Start
 
@@ -29,5 +35,12 @@ Example of Moving Joints:
 We welcome any contributions to this repo and encourage you to fork the project then send pull requests back to this parent repo. Thanks for your help!
 # How to Run
     roslaunch canbot_gazebo canbot.launch
-    rviz rviz ~/test_canbot_ws/src/canbot_gazebo/worlds/rviz_config.rviz
-    roslaunhc canbot_gazebo canbot_slam.launch
+    ( rviz rviz ~/test_canbot_ws/src/canbot_gazebo/worlds/rviz_config.rviz) --> Inside canbot.launch
+    roslaunch canbot_gazebo canbot_slam.launch
+    
+    rosrun map_server map_saver -f /home/alessio/test_map  --> To save the map built
+    rosrun map_server map_server test_map.yaml --> Load existing map
+# TODO
+- Path Planning
+- Improve model (Arm?)
+- Improve control

@@ -4,4 +4,12 @@
     <remap from="/scan" to="/canbot/laser/scan"/>
     <param name="base_frame" value="chassis"/>
   </node>
+  
+  
+  <arg name="cafe_map" value="$(find canbot_gazebo)/map/cafe.yaml"/> 
+  <arg name="node_start_delay" default="3.0" />  
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg cafe_map)"
+    launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' " />
+    
 </launch>
