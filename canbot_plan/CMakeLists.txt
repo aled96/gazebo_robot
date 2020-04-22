@@ -33,13 +33,13 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(canbot_plan_node scripts/canbot_plan_node.cpp)
-target_link_libraries(canbot_plan_node
+add_executable(canbot_dummy_plan_node scripts/canbot_dummy_plan_node.cpp)
+target_link_libraries(canbot_dummy_plan_node
    ${catkin_LIBRARIES}
 )
 
-add_executable(canbot_move_node scripts/canbot_move_node.cpp)
-target_link_libraries(canbot_move_node
+add_executable(canbot_dummy_move_node scripts/canbot_dummy_move_node.cpp)
+target_link_libraries(canbot_dummy_move_node
    ${catkin_LIBRARIES}
 )
 

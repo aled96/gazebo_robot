@@ -71,7 +71,7 @@ void callbackRegionsLaser (const canbot_msgs::RegionsLaser::ConstPtr& msg)
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "canbot_move_node");
+    ros::init(argc, argv, "canbot_dummy_move_node");
     ros::NodeHandle nh;
     
     ros::Subscriber subscriber = nh.subscribe("/canbot/laser/regions", 1, callbackRegionsLaser); //Start listening to a topic

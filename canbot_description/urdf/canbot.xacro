@@ -80,8 +80,9 @@
       </inertial>
     </link>
     
-    <wheel lr="left" tY="1"/>
-    <wheel lr="right" tY="-1"/>
+    <wheel lr="left" tY="-1"/>
+    <wheel lr="right" tY="1"/>
+    
      <!-- Camera -->
      <link name="camera_link">
       <collision>
